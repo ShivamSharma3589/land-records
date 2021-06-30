@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    scrollbar-width: thin;
+}
+header{
+    background-color:rgb(1, 1, 124);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    width: 100%;
+    background-color: brown;
+    height: 1rem;
+}
+.title{
+    display: flex;
+}
+.title1,.title2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    /* border: 1px solid white; */
+}
+.title1{
+    width: 75%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title1 h1{
+    margin-left:8% ;
+    font-size: 1.5rem;
+    text-align: left;
+    /* border: 1px solid white; */
+    padding: 0.4rem;
+}
+.title1 h1:first-child{
+    font-size: 2.5rem;
+}
+.title2{
+    width:25%;
+}
+.title2 h2{
+    background-color: rgb(213, 153, 3);
+    padding: .21rem;
+    font-size: 1.1rem;
+    width: 80%;
+    display: inline-block;
+}
+#navbar{
+    margin-bottom:1rem ;
+}
+#navbar ul{
+    display: flex;
+    font-size: small;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    background-color: rgb(33, 32, 32);
+}
+#navbar ul li{
+    width: max-content;
+    border-right: 1px solid white;
+}
+#navbar ul li:last-child{
+    border-right: none;
+}
+#navbar a{
+    color: white;
+    padding: .8rem .6rem;
+    font-weight: 900;
+    display: inline-block;
+    text-decoration: none;
+}
+#navbar li a:hover{
+    background-color: rgb(242, 242, 242);
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+#subtitles{
+    background-color: rgb(133, 131, 131);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    padding: .1rem;
+}
+
+article{
+    display: flex;
+    font-family: 'Baloo Tammudu 2', cursive;
+    height: 80vh;
+}
+#section1{
+    background-color: rgb(12, 133, 199);
+    width: 23%;
+}
+h4{
+    background-color:rgb(1, 1, 124);
+    padding: .8rem .3rem;
+    color: white;
+}
+#section1 li{
+    list-style-type: none;
+    padding: .1rem .6rem;
+    color: rgb(51, 34, 34);
+    font-size: .91rem;
+    font-weight: 500;
+}
+#section2{
+    width: 77%;
+}
+#section2 h1{
+    padding: 0.7rem;
+    border-bottom: 5px solid rgb(141, 6, 6);
+}
+.content{
+    padding: .5rem;
+}
+.radio{
+    padding: 1.7rem 0;
+}
+.input{
+    display: flex;
+    padding: 0.57rem 0;
+}
+.input div:first-child{
+    width: 30%;
+}
+.input input{
+    border: 1px solid rgb(92, 91, 91);
+    padding: .31rem;
+}
+.input1{
+    display: flex;
+    text-align: center;
+}
+.input1 div div{
+    padding: 1.3rem 0;
+}
+.input1 input{
+    width: 80%;
+    /* margin-right: .42rem; */
+}
+.button{
+    float: right;
+    padding: .3rem;
+    font-weight: 900;
+    margin-right: 6%;
+    color: white;
+    background-color: rgb(1, 1, 124);
+}
+@media (max-width:700px){
+    html{
+        font-size: 14px;
+    }
+}
+@media (max-width:600px){
+    html{
+        font-size: 12px;
+    }
+    #section1{
+        display: none;
+    }
+    .title1 h1{
+        font-size: 1rem;
+    }
+    .title1 h1:first-child{
+        font-size: 1.5rem;
+    }
+}
